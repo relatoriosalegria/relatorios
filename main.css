@@ -1,0 +1,43 @@
+.bloco-principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px #888888;
+
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: #5b3c8b;
+    color: white;
+
+    transition: .5s;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+
+    padding: 5px;
+    margin: 10px;
+    margin-top: 15px;
+    border: 1px solid;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: #5b3c8b;
+ 
+}
+
+ul {
+    list-style: none;
+  }
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
