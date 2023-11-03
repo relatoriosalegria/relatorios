@@ -11,15 +11,7 @@
     <div class="bloco-principal ">
         <form action="https://api.sheetmonkey.io/form/gv6ANQz3anDeKwrFxmuJFs" method="post">
             <label>Nome e Sobrenome:</label>
-            <input type="text" name="Nome">
-            <label>Publicações:</label>
-            <input type="number" name="publicacoes">
-            <label>Vídeos:</label>
-            <input type="number" name="Videos">
-            <label>Horas:</label>
-            <input type="number" name="Horas">
-            <label>Revisitas</label>
-            <input type="number" name="Revisitas">
+            <input type="text" name="Nome" id="nome">
             <label>Estudos:</label>
             <input type="number" name="Estudos">
             <label for="observacao">Observação:</label>
@@ -29,4 +21,16 @@
             <a href="index.html">Voltar</a>
         </form>
     </div>
+
+    <script>
+        function validarFormulario() {
+            var nome = document.getElementById('nome').value;
+
+            if (nome.trim() === '') {
+                alert("Por favor, preencha o campo Nome e Sobrenome.");
+                return false; // Impede o envio do formulário se o campo estiver vazio
+            }
+            return true; // Permite o envio do formulário se o campo estiver preenchido
+        }
+    </script>
 </html>
